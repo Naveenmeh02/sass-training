@@ -100,6 +100,7 @@ h6 {
 
 img {
   border-radius: 16px;
+  width: auto;
 }
 
 .ingredients {
@@ -137,6 +138,7 @@ img {
 }
 .instructions li::marker {
   color: hsl(14, 45%, 36%);
+  font-weight: 700;
 }
 .instructions .instr-list > ol {
   font-weight: 700;
@@ -157,8 +159,8 @@ img {
 }
 
 .nutrient-facts .items > * {
-  width: 150px;
-  margin-right: 15rem;
+  width: 50px;
+  margin-right: auto;
 }
 
 .prep-list {
@@ -194,4 +196,23 @@ img {
 .prep-heading {
   font-size: 18px;
   padding: 0 1.4rem;
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    padding: 0;
+    max-width: 375px;
+    margin: 0;
+    border-radius: 0;
+  }
+  .wrapper img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .wrapper .nutrient-facts {
+    margin: 0;
+  }
+  .main-content {
+    padding: 1.7rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
