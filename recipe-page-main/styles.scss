@@ -1,0 +1,132 @@
+@import "./resets";
+@import "./variables";
+
+.wrapper{
+    background-color: $ntrl-white;
+    border-radius: 2rem;
+    overflow: hidden;
+    font-size: $font-size;
+    max-width: 740px;
+    padding: 2.5rem;
+    
+    .sub-heading{
+        font-size: 30px;
+        font-weight: map-get( $font-weight, regular );
+    }
+}
+
+.main-content{
+    padding: 2rem 0;
+}
+
+img{
+    border-radius: 16px;
+}
+
+.ingredients{
+    line-height: 2rem;
+    margin: 2rem 0;
+    
+    li{
+        color: $ntrl-wenge-brown;
+    }
+    
+    li::marker{
+        color: $primary-nutmeg;
+    }
+
+    ul{
+        padding: 1rem 2rem;
+    }
+}
+
+.details{
+    margin: 2rem 0;
+
+    ul,ol{
+        padding: 1rem 2rem;
+    }
+
+    .nutr-facts{
+        padding: 1rem 0;
+    }
+    .nutri-detail{
+        padding: 1rem 0;
+    }
+}
+.instructions{
+    margin-bottom: 10px;
+
+    .instr-list{
+        color: $ntrl-wenge-brown;
+    }
+
+    li::marker{
+        color: $primary-nutmeg;
+    }
+
+    .instr-list>ol{
+        font-weight: map-get($font-weight,bold );
+    }
+}
+.instr-list>li{
+    padding:3px 0 ;
+}
+.nutrient-facts{
+    display: flex;
+    flex-direction: column;
+    
+    .items{
+        display: flex;
+        border-bottom: 2px solid $ntrl-light-grey;
+        padding:1rem 1.9rem;
+    }
+}
+
+.nutrient-facts .items>*{
+    width: 150px;
+    margin-right: 15rem;
+}
+
+// ---------interior container
+.prep-list{
+    color: $ntrl-wenge-brown;
+
+    li::marker{
+        color: $primary-Dk-Raspberry
+    }
+}
+
+
+.prep-time{
+    background-color: $ntrl-rose-white;
+    padding: 1.4rem .7em;
+    margin: .4rem;
+    line-height: 2rem;
+    color: $primary-Dk-Raspberry;
+    border-radius: 6px;
+}
+
+
+// --------- font-styles
+.heading,.ing-heading{
+    font-family: $font-family01;
+}
+
+.main-heading{
+    color: $ntrl-Dk-charcoal;
+    font-size: 2.4rem;
+    font-weight: map-get($font-weight, regular );
+}
+
+.bold-txt{
+    font-weight: map-get( $font-weight, bold );
+}
+.prep-heading{
+    font-size: 18px;
+    padding: 0 1.4rem ;
+}
+
+// -------media-queries
+
+
